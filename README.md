@@ -38,8 +38,10 @@ use Mix.Config
 
 config :battlenet,
   redirect_uri: "your-redirect-uri", # required
-  region: "override-region", # optional, defaults to eu
-  site_url: "override-site-url" # optional, defaults to <region>.battle.net
+
+  api_site_url: "override", # optional, defaults to <region>.api.battle.net
+  region: "override", # optional, defaults to eu
+  site_url: "override" # optional, defaults to <region>.battle.net
 
 import_config "config.secret.exs"
 ```
