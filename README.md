@@ -1,5 +1,7 @@
 # Battlenet
 
+[![Build Status](https://travis-ci.org/cazrin/battlenet.svg)](https://travis-ci.org/cazrin/battlenet)
+
 Elixir library for the [Battle.net][1] API.
 
 ## Installation
