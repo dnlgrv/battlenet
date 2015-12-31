@@ -10,7 +10,7 @@ Add `battlenet` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:battlenet, "~> 0.1"}]
+  [{:battlenet, "~> 0.0.2"}]
 end
 ```
 
