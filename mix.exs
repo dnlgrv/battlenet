@@ -1,12 +1,18 @@
 defmodule Battlenet.Mixfile do
   use Mix.Project
 
+  @description """
+  Elixir library for the Battle.net API.
+  """
+
   def project do
     [app: :battlenet,
      version: "0.0.1",
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: @description,
+     package: package,
      deps: deps]
   end
 
@@ -33,5 +39,11 @@ defmodule Battlenet.Mixfile do
 
       {:bypass, "~> 0.1", only: :test}
     ]
+  end
+
+  defp package do
+    [contributors: ["Daniel Grieve"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/cazrin/battlenet"}]
   end
 end
