@@ -22,7 +22,7 @@ defmodule Battlenet.Auth do
   defp token_params(code) do
     [code: code,
      grant_type: "authorization_code",
-     redirect_uri: Dict.get(config, :redirect_uri)]
+     redirect_uri: redirect_uri]
   end
 
   defp config, do: Application.get_all_env(:battlenet)
