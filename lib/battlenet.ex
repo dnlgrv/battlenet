@@ -1,0 +1,2 @@
+defmodule Battlenet do
+end
