@@ -64,7 +64,8 @@ it works.
   - [ ] Scopes
   - [ ] State verification
 - [ ] API
-  - [ ] User profile (for Battle.net ID and Battletag)
+  - [x] User profile (for Battle.net ID and Battletag)
+  - [ ] Flexible API requests (any endpoint)
 
 ## License
 
