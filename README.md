@@ -36,8 +36,8 @@ use Mix.Config
 
 config :battlenet,
   redirect_uri: "your-redirect-uri", # required
-  site_url: "override-site-url", # optional, defaults to <region>.battle.net
-  region: "override-region" # optional, defaults to eu
+  region: "override-region", # optional, defaults to eu
+  site_url: "override-site-url" # optional, defaults to <region>.battle.net
 
 import_config "config.secret.exs"
 ```
@@ -51,11 +51,16 @@ config :battlenet,
   client_secret: "your-client-secret", # required
 ```
 
+It's worth reading [Blizzard's OAuth Documentation][3] to get familiar with how
+it works.
+
 ## Task list
 
 - [x] OAuth interactions
   - [x] Authorization URL
   - [x] Access token
+  - [ ] Scopes
+  - [ ] State verification
 - [ ] API
   - [ ] User profile (for Battle.net ID and Battletag)
 
@@ -65,3 +70,4 @@ See [LICENSE.md](LICENSE.md).
 
 [1]: https://dev.battle.net
 [2]: https://dev.battle.net/apps/mykeys
+[3]: https://dev.battle.net/docs/read/oauth
