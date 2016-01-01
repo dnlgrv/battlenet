@@ -1,6 +1,8 @@
 defmodule Battlenet.User do
   defstruct id: nil, battletag: nil
 
+  alias Battlenet.Config
+
   def with_token(access_token) do
     case HTTPoison.get(resource_url("account/user", access_token)) do
       {:ok, %HTTPoison.Response{body: body}} ->
@@ -9,13 +11,7 @@ defmodule Battlenet.User do
     end
   end
 
-  defp api_url, do: config_api_site_url || "https://#{region}.api.battle.net"
   defp resource_url(path, access_token) do
-    "#{api_url}/#{path}?access_token=#{access_token}"
-  end
-
-  defp config_api_site_url, do: Application.get_env(:battlenet, :api_site_url)
-  defp region do
-    Application.get_env(:battlenet, :region) || "eu"
+    "#{Config.api_site_url}/#{path}?access_token=#{access_token}"
   end
 end
