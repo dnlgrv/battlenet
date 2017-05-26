@@ -37,6 +37,7 @@ defmodule Battlenet.Mixfile do
       {:httpoison, "~> 0.8.0"},
       {:poison, "~> 1.5"},
 
+      {:ex_doc, "~> 0.14", only: :dev},
       {:bypass, "~> 0.1", only: :test}
     ]
   end
