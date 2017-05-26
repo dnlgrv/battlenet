@@ -1,6 +1,6 @@
 # Battlenet
 
-[![Build Status](https://travis-ci.org/cazrin/battlenet.svg)](https://travis-ci.org/cazrin/battlenet)
+[![Build Status](https://travis-ci.org/danielgrieve/battlenet.svg)](https://travis-ci.org/danielgrieve/battlenet)
 
 Elixir library for the [Battle.net][1] API.
 

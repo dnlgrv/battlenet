@@ -44,6 +44,6 @@ defmodule Battlenet.Mixfile do
   defp package do
     [ maintainers: ["Daniel Grieve"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/cazrin/battlenet"}]
+      links: %{"GitHub" => "https://github.com/danielgrieve/battlenet"}]
   end
 end
